@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  angular-fed-app: 
+    image: robsonsamp/angular-fed-paper-kit-app
+    ports: 
+      - 8000:80
+    container_name: centraldev-fed-paper-app
+    volumes:
+       - ./src:/usr/src/app/src
